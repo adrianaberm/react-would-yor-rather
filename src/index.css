@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {
+	background: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.login-page .login-page__inner{
+	max-width: 1024px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+h1 {
+	color: #333;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.login-page h2, .Leaderboard__inner h2 {
+	color: #868686;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.user-list {
+	max-width: 600px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.user-list__item {
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+}
+
+.user-list__avatar {
+	opacity: 0.6;
+	border-radius: 100%;
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.user-list__avatar:hover {
+	opacity: 1;
+}
+
+.user-list__avatar img {
+	width: 100%;
+}
+
+.user-list__name {
+	color: #686868;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.user-list__item:hover .user-list__name{
+	color: #000;
+}
+
+.navigation-bar {
+	background: #a049b5;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.navbar {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.navbar li {
+	display: block;
+	margin: 30px;
+	list-style: none;
+	text-align: center;
+}
+
+.navbar li a {
+	color: #f2f2f2;
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+.navbar li a:hover {
+	color: #fff;
+}
+
+.navbar li a.active {
+	color: #fff;
+	font-weight: 700;
+}
+
+.navbar li a.active:after{
+	background: #fff;
+	bottom: -8px;
+	content: "";
+	height: 2px;
+	left: 0;
+	margin: auto;
+	position:absolute;
+	right: 0;
+	width: 30px;
+}
+
+.navigation-bar__user {
+	text-align: center;
+}
+
+.navigation-bar__user p {
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+.navigation-bar__user p span {
+	display: inline-block;
+	margin: 0 5px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.logout-btn {
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	text-decoration: underline;
+	width: 80px;
+}
+
+.logout-btn:after {
+	content: "\f08b";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin: 0 8px;
+}
+
+.dashboard-page__inner {
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.dashborad__filter {
+	text-align: center;
+}
+
+.dashborad__filter button {
+	border: 1px solid #ccc;
+	background: #c3c3c3;
+	padding: 10px;
+	width: 120px;
+}
+
+.dashborad__filter button:focus {
+	background: purple;
+	color: #fff;
+	outline-color: purple;
+}
+
+.image-container {
+	border-radius: 100%;
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100px;
+}
+
+.image-container img {
+	width: 100%;
+}
+
+.questions-container {
+	background: #fff;
+	margin: 40px 10px;
+	padding: 30px;
+	text-align: center;
+
+}
+
+.question-item {
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.question-item:last-of-type {
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+.question-item__avatar {
+	text-align: center;
+}
+
+.question-item__avatar .image-container, .question-detail__header .image-container {
+	height: 50px;
+	width: 50px;
+}
+
+.question-item__avatar h2, .question-detail__header p {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.question-item__content a {
+	text-decoration: none;
+}
+
+.question-item__content a  p {
+	color: #000;
+}
+
+.question-item__option {
+	color: purple;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0 5px;
+}
+
+.btn-poll {
+	background: #fff;
+	border: 1px solid purple;
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	width: 80px;
+}
+
+.btn-poll:hover {
+	background: purple;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.question-detail {
+	background: #fff;
+	padding: 30px;
+	margin: 0 auto;
+	max-width: 600px;
+	text-align: center;
+}
+
+.question-detail__content span {
+	color: purple;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.options {
+	margin-bottom: 20px;
+}
+
+.option_content button, .add-btn {
+	background: #fff;
+	border: 1px solid purple;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 10px;
+
+}
+
+.option_content button:focus, .add-btn:focus {
+	outline: none;
+}
+.option_content button:hover, .add-btn:hover {
+	background: purple;
+	color: #fff;
+}
+
+.bar-container {
+	border: 1px solid #efefef;
+	height: 30px;
+	margin: 0 auto 5px;
+	position: relative;
+	width: 300px;
+}
+
+.bar-container p {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	color: #ccc;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.vote-bar {
+	background: purple;
+	height: 100%;
+}
+
+.add__inner {
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.add__inner h2 {
+	text-align: center;
+}
+
+.question-form  label{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.question-form input {
+	display: block;
+	margin: 0 auto 20px;
+	padding: 10px;
+}
+
+.add-btn {
+	display: block;
+	margin: 0 auto;
+}
+.Leaderboard__item {
+	background: #fff;
+	max-width: 600px;
+	margin: 30px auto;
+	padding: 20px;
+	position: relative
+}
+
+.Leaderboard__content {
+	position: relative;
+	text-align: center;
+}
+
+.Leaderboard__item:first-of-type:before {
+	border-radius: 100%;
+	content: "WINNER";
+	color: #fff;
+	display: block;
+	height: 50px;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 50px;
+	right: -20px;
+	top: -20px;
+	position: absolute;
+	background: #ffd600;
+	text-align: center;
+	width: 50px;
+	webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.Leaderboard__content p {
+	font-size: 14px;
+}
+
+.error-page {
+	font-size: 18px;
+	text-align: center;
+}
+
+.error-page a {
+	display: block;
+}
+@media (min-width: 768px) {
+	.user-list__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 33%;
+	}
+
+	.navbar {
+		float: left;
+		max-width: 600px;
+
+	}
+
+	.navbar li {
+		display: inline-block;
+		margin: 0 30px;
+
+	}
+
+	.navigation-bar__user {
+		float: right;
+	}
+}
